@@ -1,0 +1,6 @@
+{
+  "name": "Binance Crypto Trading Bot",
+  "description": "Aplicativo profissional de trading de criptomoedas com robô automatizado para Binance, gatilhos de compra na baixa, take profit, stop loss, monitoramento em tempo real e aplicação Python com interface gráfica e logs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

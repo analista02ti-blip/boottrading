@@ -1,0 +1,3 @@
+# Requisitos para o Robô de Trading Binance em Python
+# O tkinter já vem incluído por padrão na maioria das distribuições do Python 3
+# Bibliotecas padrão utilizadas: urllib, json, hmac, hashlib, threading, logging, time, sys

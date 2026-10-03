@@ -1,0 +1,297 @@
+import { TradeRecord } from '../types/trading';
+
+// Realistic sample historical trades for the Bot Performance Report
+const now = Date.now();
+const DAY = 24 * 60 * 60 * 1000;
+const HOUR = 60 * 60 * 1000;
+
+export const INITIAL_PERFORMANCE_TRADES: TradeRecord[] = [
+  {
+    id: 'ord-89241',
+    symbol: 'BTCUSDT',
+    side: 'SELL',
+    price: 86450.20,
+    quantity: 0.0058,
+    totalUsdt: 501.41,
+    trigger: 'TAKE_PROFIT',
+    pnlUsdt: 15.35,
+    pnlPercent: 3.16,
+    timestamp: now - (2 * HOUR),
+    orderId: 'BN-89241'
+  },
+  {
+    id: 'ord-89240',
+    symbol: 'BTCUSDT',
+    side: 'BUY',
+    price: 83800.00,
+    quantity: 0.0058,
+    totalUsdt: 486.04,
+    trigger: 'DIP_BUY',
+    timestamp: now - (5 * HOUR),
+    orderId: 'BN-89240'
+  },
+  {
+    id: 'ord-89232',
+    symbol: 'SOLUSDT',
+    side: 'SELL',
+    price: 158.40,
+    quantity: 2.50,
+    totalUsdt: 396.00,
+    trigger: 'TAKE_PROFIT',
+    pnlUsdt: 12.50,
+    pnlPercent: 3.26,
+    timestamp: now - (14 * HOUR),
+    orderId: 'BN-89232'
+  },
+  {
+    id: 'ord-89231',
+    symbol: 'SOLUSDT',
+    side: 'BUY',
+    price: 153.40,
+    quantity: 2.50,
+    totalUsdt: 383.50,
+    trigger: 'DIP_BUY',
+    timestamp: now - (19 * HOUR),
+    orderId: 'BN-89231'
+  },
+  {
+    id: 'ord-89218',
+    symbol: 'ETHUSDT',
+    side: 'SELL',
+    price: 2580.10,
+    quantity: 0.15,
+    totalUsdt: 387.01,
+    trigger: 'STOP_LOSS',
+    pnlUsdt: -8.10,
+    pnlPercent: -2.05,
+    timestamp: now - (1 * DAY) - (4 * HOUR),
+    orderId: 'BN-89218'
+  },
+  {
+    id: 'ord-89217',
+    symbol: 'ETHUSDT',
+    side: 'BUY',
+    price: 2634.10,
+    quantity: 0.15,
+    totalUsdt: 395.11,
+    trigger: 'DIP_BUY',
+    timestamp: now - (1 * DAY) - (8 * HOUR),
+    orderId: 'BN-89217'
+  },
+  {
+    id: 'ord-89205',
+    symbol: 'BTCUSDT',
+    side: 'SELL',
+    price: 85200.00,
+    quantity: 0.0055,
+    totalUsdt: 468.60,
+    trigger: 'TAKE_PROFIT',
+    pnlUsdt: 14.30,
+    pnlPercent: 3.15,
+    timestamp: now - (2 * DAY) - (3 * HOUR),
+    orderId: 'BN-89205'
+  },
+  {
+    id: 'ord-89204',
+    symbol: 'BTCUSDT',
+    side: 'BUY',
+    price: 82600.00,
+    quantity: 0.0055,
+    totalUsdt: 454.30,
+    trigger: 'DIP_BUY',
+    timestamp: now - (2 * DAY) - (7 * HOUR),
+    orderId: 'BN-89204'
+  },
+  {
+    id: 'ord-89190',
+    symbol: 'BNBUSDT',
+    side: 'SELL',
+    price: 602.80,
+    quantity: 0.80,
+    totalUsdt: 482.24,
+    trigger: 'TAKE_PROFIT',
+    pnlUsdt: 14.80,
+    pnlPercent: 3.17,
+    timestamp: now - (3 * DAY) - (1 * HOUR),
+    orderId: 'BN-89190'
+  },
+  {
+    id: 'ord-89189',
+    symbol: 'BNBUSDT',
+    side: 'BUY',
+    price: 584.30,
+    quantity: 0.80,
+    totalUsdt: 467.44,
+    trigger: 'DIP_BUY',
+    timestamp: now - (3 * DAY) - (5 * HOUR),
+    orderId: 'BN-89189'
+  },
+  {
+    id: 'ord-89172',
+    symbol: 'XRPUSDT',
+    side: 'SELL',
+    price: 0.6120,
+    quantity: 500,
+    totalUsdt: 306.00,
+    trigger: 'TAKE_PROFIT',
+    pnlUsdt: 9.50,
+    pnlPercent: 3.20,
+    timestamp: now - (4 * DAY) - (6 * HOUR),
+    orderId: 'BN-89172'
+  },
+  {
+    id: 'ord-89171',
+    symbol: 'XRPUSDT',
+    side: 'BUY',
+    price: 0.5930,
+    quantity: 500,
+    totalUsdt: 296.50,
+    trigger: 'DIP_BUY',
+    timestamp: now - (4 * DAY) - (12 * HOUR),
+    orderId: 'BN-89171'
+  },
+  {
+    id: 'ord-89155',
+    symbol: 'SOLUSDT',
+    side: 'SELL',
+    price: 147.20,
+    quantity: 2.20,
+    totalUsdt: 323.84,
+    trigger: 'STOP_LOSS',
+    pnlUsdt: -6.82,
+    pnlPercent: -2.06,
+    timestamp: now - (5 * DAY) - (8 * HOUR),
+    orderId: 'BN-89155'
+  },
+  {
+    id: 'ord-89154',
+    symbol: 'SOLUSDT',
+    side: 'BUY',
+    price: 150.30,
+    quantity: 2.20,
+    totalUsdt: 330.66,
+    trigger: 'DIP_BUY',
+    timestamp: now - (5 * DAY) - (14 * HOUR),
+    orderId: 'BN-89154'
+  },
+  {
+    id: 'ord-89140',
+    symbol: 'BTCUSDT',
+    side: 'SELL',
+    price: 84300.00,
+    quantity: 0.0050,
+    totalUsdt: 421.50,
+    trigger: 'TAKE_PROFIT',
+    pnlUsdt: 13.00,
+    pnlPercent: 3.18,
+    timestamp: now - (6 * DAY) - (2 * HOUR),
+    orderId: 'BN-89140'
+  },
+  {
+    id: 'ord-89139',
+    symbol: 'BTCUSDT',
+    side: 'BUY',
+    price: 81700.00,
+    quantity: 0.0050,
+    totalUsdt: 408.50,
+    trigger: 'DIP_BUY',
+    timestamp: now - (6 * DAY) - (9 * HOUR),
+    orderId: 'BN-89139'
+  },
+  {
+    id: 'ord-89125',
+    symbol: 'ETHUSDT',
+    side: 'SELL',
+    price: 2680.00,
+    quantity: 0.16,
+    totalUsdt: 428.80,
+    trigger: 'TAKE_PROFIT',
+    pnlUsdt: 13.60,
+    pnlPercent: 3.27,
+    timestamp: now - (7 * DAY) - (4 * HOUR),
+    orderId: 'BN-89125'
+  },
+  {
+    id: 'ord-89124',
+    symbol: 'ETHUSDT',
+    side: 'BUY',
+    price: 2595.00,
+    quantity: 0.16,
+    totalUsdt: 415.20,
+    trigger: 'DIP_BUY',
+    timestamp: now - (7 * DAY) - (11 * HOUR),
+    orderId: 'BN-89124'
+  },
+  {
+    id: 'ord-89110',
+    symbol: 'AVAXUSDT',
+    side: 'SELL',
+    price: 29.80,
+    quantity: 12.0,
+    totalUsdt: 357.60,
+    trigger: 'TAKE_PROFIT',
+    pnlUsdt: 11.40,
+    pnlPercent: 3.29,
+    timestamp: now - (8 * DAY) - (5 * HOUR),
+    orderId: 'BN-89110'
+  },
+  {
+    id: 'ord-89109',
+    symbol: 'AVAXUSDT',
+    side: 'BUY',
+    price: 28.85,
+    quantity: 12.0,
+    totalUsdt: 346.20,
+    trigger: 'DIP_BUY',
+    timestamp: now - (8 * DAY) - (10 * HOUR),
+    orderId: 'BN-89109'
+  },
+  {
+    id: 'ord-89095',
+    symbol: 'BTCUSDT',
+    side: 'SELL',
+    price: 81500.00,
+    quantity: 0.0048,
+    totalUsdt: 391.20,
+    trigger: 'TAKE_PROFIT',
+    pnlUsdt: 12.00,
+    pnlPercent: 3.16,
+    timestamp: now - (10 * DAY) - (3 * HOUR),
+    orderId: 'BN-89095'
+  },
+  {
+    id: 'ord-89094',
+    symbol: 'BTCUSDT',
+    side: 'BUY',
+    price: 79000.00,
+    quantity: 0.0048,
+    totalUsdt: 379.20,
+    trigger: 'DIP_BUY',
+    timestamp: now - (10 * DAY) - (7 * HOUR),
+    orderId: 'BN-89094'
+  },
+  {
+    id: 'ord-89080',
+    symbol: 'SOLUSDT',
+    side: 'SELL',
+    price: 142.10,
+    quantity: 2.0,
+    totalUsdt: 284.20,
+    trigger: 'STOP_LOSS',
+    pnlUsdt: -5.90,
+    pnlPercent: -2.03,
+    timestamp: now - (12 * DAY) - (1 * HOUR),
+    orderId: 'BN-89080'
+  },
+  {
+    id: 'ord-89079',
+    symbol: 'SOLUSDT',
+    side: 'BUY',
+    price: 145.05,
+    quantity: 2.0,
+    totalUsdt: 290.10,
+    trigger: 'DIP_BUY',
+    timestamp: now - (12 * DAY) - (5 * HOUR),
+    orderId: 'BN-89079'
+  }
+];
